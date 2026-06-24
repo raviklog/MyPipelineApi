@@ -2,6 +2,16 @@
 {
     public class LoginService
     {
-        private string password = "12345"; // Sonar will flag this as a security issue
+        public void Authenticate()
+        {
+            try
+            {
+                int x = 1 / 0; // deliberate error
+            }
+            catch (Exception)
+            {
+                // Empty catch block - Sonar will flag this
+            }
+        }
     }
 }
