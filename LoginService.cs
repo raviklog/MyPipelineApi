@@ -6,7 +6,7 @@
         {
             try
             {
-                int x = 1 / 0; // deliberate error
+                int x = 6 ; // deliberate error
             }
             catch (Exception)
             {
